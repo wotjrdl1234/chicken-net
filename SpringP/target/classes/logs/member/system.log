@@ -1,0 +1,792 @@
+21-10-06 00:36:01 [INFO ] ContextLoader.initWebApplicationContext{271} - Root WebApplicationContext: initialization started
+21-10-06 00:36:03 [INFO ] ContextLoader.initWebApplicationContext{307} - Root WebApplicationContext initialized in 2565 ms
+21-10-06 00:36:03 [INFO ] DispatcherServlet.initServletBean{525} - Initializing Servlet 'appServlet'
+21-10-06 00:36:06 [INFO ] DispatcherServlet.initServletBean{547} - Completed initialization in 2299 ms
+21-10-06 00:36:09 [DEBUG] MemberCountroller.enrollFrom{185} - ========== START ==========
+21-10-06 00:36:09 [INFO ] MemberCountroller.enrollFrom{186} - ========== START info ==========
+21-10-06 00:42:30 [INFO ] ContextLoader.initWebApplicationContext{271} - Root WebApplicationContext: initialization started
+21-10-06 00:42:31 [INFO ] ContextLoader.initWebApplicationContext{307} - Root WebApplicationContext initialized in 1677 ms
+21-10-06 00:42:31 [INFO ] DispatcherServlet.initServletBean{525} - Initializing Servlet 'appServlet'
+21-10-06 00:42:33 [INFO ] DispatcherServlet.initServletBean{547} - Completed initialization in 1516 ms
+21-10-06 00:42:41 [WARN ] BCryptPasswordEncoder.matches{118} - Encoded password does not look like BCrypt
+21-10-06 00:42:41 [WARN ] BCryptPasswordEncoder.matches{118} - Encoded password does not look like BCrypt
+21-10-06 00:42:47 [DEBUG] MemberCountroller.enrollFrom{185} - ========== START ==========
+21-10-06 00:42:47 [INFO ] MemberCountroller.enrollFrom{186} - ========== START info ==========
+21-10-06 00:55:28 [WARN ] PageNotFound.noHandlerFound{1251} - No mapping for GET /spring/updatePwd.me
+21-10-06 00:56:38 [WARN ] PageNotFound.noHandlerFound{1251} - No mapping for GET /spring/updatePwd.me
+21-10-06 01:09:50 [WARN ] PageNotFound.noHandlerFound{1251} - No mapping for GET /spring/updatePwd.me
+21-10-06 02:56:28 [WARN ] BCryptPasswordEncoder.matches{113} - Empty encoded password
+21-10-06 09:30:59 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 09:30:59 [DEBUG] TestInterceptor.preHandle{21} - /spring/login.me
+21-10-06 09:31:01 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 09:31:01 [DEBUG] TestInterceptor.preHandle{21} - /spring/login.me
+21-10-06 09:31:03 [DEBUG] TestInterceptor.postHandle{30} - ========== postHandle ==========
+21-10-06 09:31:03 [DEBUG] TestInterceptor.postHandle{30} - ========== postHandle ==========
+21-10-06 09:31:03 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
+21-10-06 09:31:03 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
+21-10-06 09:40:12 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 09:40:12 [DEBUG] TestInterceptor.preHandle{21} - /spring/login.me
+21-10-06 09:40:15 [INFO ] LoginInterceptor.postHandle{29} - jinjin 192.168.35.215
+21-10-06 09:40:15 [DEBUG] TestInterceptor.postHandle{30} - ========== postHandle ==========
+21-10-06 09:40:15 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
+21-10-06 09:52:38 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 09:52:38 [DEBUG] TestInterceptor.preHandle{21} - /spring/list.bo
+21-10-06 09:52:38 [INFO ] BListInterceptor.preHandle{26} - 비로그인 상태에서[/spring/list.bo] 접근시도
+21-10-06 09:52:38 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
+21-10-06 10:46:27 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 10:46:27 [DEBUG] TestInterceptor.preHandle{21} - /spring/login.me
+21-10-06 10:46:28 [INFO ] LoginInterceptor.postHandle{29} - jinjin 192.168.35.215
+21-10-06 10:46:28 [DEBUG] TestInterceptor.postHandle{30} - ========== postHandle ==========
+21-10-06 10:46:28 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
+21-10-06 10:46:33 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 10:46:33 [DEBUG] TestInterceptor.preHandle{21} - /spring/myPage.me
+21-10-06 10:46:33 [DEBUG] TestInterceptor.postHandle{30} - ========== postHandle ==========
+21-10-06 10:46:33 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
+21-10-06 10:46:41 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 10:46:41 [DEBUG] TestInterceptor.preHandle{21} - /spring/update.me
+21-10-06 10:46:41 [ERROR] audit.exceptionOccured{120} - 3. PreparedStatement.execute() insert into member
+		values('jinjin', NULL, '예진상', 'oasis21213@naver.com', 'F',
+		'20', '01091318410', '13968   /   경기도 안양시 만안구 석천로 177-1   /   (석수동)', sysdate, sysdate, default)
+java.sql.SQLIntegrityConstraintViolationException: ORA-01400: cannot insert NULL into ("SPRING"."MEMBER"."USER_PWD")
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:447)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:951)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:513)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:227)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:531)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:208)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1046)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1336)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3613)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3714)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1378)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at net.sf.log4jdbc.PreparedStatementSpy.execute(PreparedStatementSpy.java:418)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy8.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278)
+	at com.kh.spring.member.model.dao.MemberDao.insertMember(MemberDao.java:16)
+	at com.kh.spring.member.model.service.MemberServiceImpl.updateMember(MemberServiceImpl.java:61)
+	at com.kh.spring.member.controller.MemberCountroller.updateMember(MemberCountroller.java:200)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:232)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:167)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:194)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:167)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:194)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:167)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:544)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:698)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:364)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:624)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:831)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1651)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+21-10-06 10:46:41 [ERROR] sqltiming.exceptionOccured{139} - 3. PreparedStatement.execute() FAILED! insert into member
+		values('jinjin', NULL, '예진상', 'oasis21213@naver.com', 'F',
+		'20', '01091318410', '13968   /   경기도 안양시 만안구 석천로 177-1   /   (석수동)', sysdate, sysdate, default) {FAILED after 7 msec}
+java.sql.SQLIntegrityConstraintViolationException: ORA-01400: cannot insert NULL into ("SPRING"."MEMBER"."USER_PWD")
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:447)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:951)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:513)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:227)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:531)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:208)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1046)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1336)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3613)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3714)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1378)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at net.sf.log4jdbc.PreparedStatementSpy.execute(PreparedStatementSpy.java:418)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy8.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278)
+	at com.kh.spring.member.model.dao.MemberDao.insertMember(MemberDao.java:16)
+	at com.kh.spring.member.model.service.MemberServiceImpl.updateMember(MemberServiceImpl.java:61)
+	at com.kh.spring.member.controller.MemberCountroller.updateMember(MemberCountroller.java:200)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:232)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:167)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:194)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:167)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:194)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:167)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:544)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:698)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:364)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:624)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:831)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1651)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+21-10-06 10:46:41 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
+21-10-06 11:02:23 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 11:02:23 [DEBUG] TestInterceptor.preHandle{21} - /spring/list.bo
+21-10-06 11:02:23 [INFO ] BListInterceptor.preHandle{26} - 비로그인 상태에서[/spring/list.bo] 접근시도
+21-10-06 11:02:23 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
+21-10-06 11:02:31 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 11:02:31 [DEBUG] TestInterceptor.preHandle{21} - /spring/login.me
+21-10-06 11:02:33 [INFO ] LoginInterceptor.postHandle{29} - jinjin 192.168.35.215
+21-10-06 11:02:33 [DEBUG] TestInterceptor.postHandle{30} - ========== postHandle ==========
+21-10-06 11:02:33 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
+21-10-06 11:02:36 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 11:02:36 [DEBUG] TestInterceptor.preHandle{21} - /spring/myPage.me
+21-10-06 11:02:36 [DEBUG] TestInterceptor.postHandle{30} - ========== postHandle ==========
+21-10-06 11:02:36 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
+21-10-06 11:02:55 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 11:02:55 [DEBUG] TestInterceptor.preHandle{21} - /spring/update.me
+21-10-06 11:02:55 [ERROR] audit.exceptionOccured{120} - 2. PreparedStatement.execute() insert into member
+		values('jinjin', NULL, '예진상', 'oasis21213@naver.com', 'F',
+		'28', '01091318410', '13968    /    경기도 안양시 만안구 석천로 177-1    /    (석수동)', sysdate, sysdate, default)
+java.sql.SQLIntegrityConstraintViolationException: ORA-01400: cannot insert NULL into ("SPRING"."MEMBER"."USER_PWD")
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:447)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:951)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:513)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:227)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:531)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:208)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1046)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1336)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3613)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3714)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1378)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at net.sf.log4jdbc.PreparedStatementSpy.execute(PreparedStatementSpy.java:418)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy8.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278)
+	at com.kh.spring.member.model.dao.MemberDao.insertMember(MemberDao.java:16)
+	at com.kh.spring.member.model.service.MemberServiceImpl.updateMember(MemberServiceImpl.java:64)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:366)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:99)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy34.updateMember(Unknown Source)
+	at com.kh.spring.member.controller.MemberCountroller.updateMember(MemberCountroller.java:200)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:232)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:167)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:194)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:167)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:194)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:167)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:544)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:698)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:364)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:624)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:831)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1651)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+21-10-06 11:02:55 [ERROR] sqltiming.exceptionOccured{139} - 2. PreparedStatement.execute() FAILED! insert into member
+		values('jinjin', NULL, '예진상', 'oasis21213@naver.com', 'F',
+		'28', '01091318410', '13968    /    경기도 안양시 만안구 석천로 177-1    /    (석수동)', sysdate, sysdate, default) {FAILED after 11 msec}
+java.sql.SQLIntegrityConstraintViolationException: ORA-01400: cannot insert NULL into ("SPRING"."MEMBER"."USER_PWD")
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:447)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:951)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:513)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:227)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:531)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:208)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1046)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1336)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3613)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3714)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1378)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at net.sf.log4jdbc.PreparedStatementSpy.execute(PreparedStatementSpy.java:418)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy8.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278)
+	at com.kh.spring.member.model.dao.MemberDao.insertMember(MemberDao.java:16)
+	at com.kh.spring.member.model.service.MemberServiceImpl.updateMember(MemberServiceImpl.java:64)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:366)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:99)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy34.updateMember(Unknown Source)
+	at com.kh.spring.member.controller.MemberCountroller.updateMember(MemberCountroller.java:200)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:232)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:167)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:194)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:167)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:194)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:167)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:544)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:698)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:364)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:624)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:831)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1651)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+21-10-06 11:02:55 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
+21-10-06 11:03:01 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 11:03:01 [DEBUG] TestInterceptor.preHandle{21} - /spring/myPage.me
+21-10-06 11:03:01 [DEBUG] TestInterceptor.postHandle{30} - ========== postHandle ==========
+21-10-06 11:03:01 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
+21-10-06 11:14:42 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 11:14:42 [DEBUG] TestInterceptor.preHandle{21} - /spring/login.me
+21-10-06 11:14:43 [INFO ] LoginInterceptor.postHandle{29} - jinjin 192.168.35.215
+21-10-06 11:14:43 [DEBUG] TestInterceptor.postHandle{30} - ========== postHandle ==========
+21-10-06 11:14:43 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
+21-10-06 11:14:46 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 11:14:46 [DEBUG] TestInterceptor.preHandle{21} - /spring/myPage.me
+21-10-06 11:14:46 [DEBUG] TestInterceptor.postHandle{30} - ========== postHandle ==========
+21-10-06 11:14:46 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
+21-10-06 11:14:53 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 11:14:53 [DEBUG] TestInterceptor.preHandle{21} - /spring/update.me
+21-10-06 11:14:53 [DEBUG] TestInterceptor.postHandle{30} - ========== postHandle ==========
+21-10-06 11:14:53 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
+21-10-06 11:15:09 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 11:15:09 [DEBUG] TestInterceptor.preHandle{21} - /spring/myPage.me
+21-10-06 11:15:09 [DEBUG] TestInterceptor.postHandle{30} - ========== postHandle ==========
+21-10-06 11:15:09 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
+21-10-06 11:18:13 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 11:18:13 [DEBUG] TestInterceptor.preHandle{21} - /spring/login.me
+21-10-06 11:18:15 [INFO ] LoginInterceptor.postHandle{29} - jinjin 192.168.35.215
+21-10-06 11:18:15 [DEBUG] TestInterceptor.postHandle{30} - ========== postHandle ==========
+21-10-06 11:18:15 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
+21-10-06 11:18:17 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 11:18:17 [DEBUG] TestInterceptor.preHandle{21} - /spring/myPage.me
+21-10-06 11:18:17 [DEBUG] TestInterceptor.postHandle{30} - ========== postHandle ==========
+21-10-06 11:18:17 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
+21-10-06 11:18:21 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 11:18:21 [DEBUG] TestInterceptor.preHandle{21} - /spring/update.me
+21-10-06 11:18:21 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
+21-10-06 11:18:25 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 11:18:25 [DEBUG] TestInterceptor.preHandle{21} - /spring/myPage.me
+21-10-06 11:18:25 [DEBUG] TestInterceptor.postHandle{30} - ========== postHandle ==========
+21-10-06 11:18:25 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
+21-10-06 11:19:16 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 11:19:16 [DEBUG] TestInterceptor.preHandle{21} - /spring/login.me
+21-10-06 11:19:18 [INFO ] LoginInterceptor.postHandle{29} - jinjin 192.168.35.215
+21-10-06 11:19:18 [DEBUG] TestInterceptor.postHandle{30} - ========== postHandle ==========
+21-10-06 11:19:18 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
+21-10-06 11:19:21 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 11:19:21 [DEBUG] TestInterceptor.preHandle{21} - /spring/myPage.me
+21-10-06 11:19:21 [DEBUG] TestInterceptor.postHandle{30} - ========== postHandle ==========
+21-10-06 11:19:21 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
+21-10-06 11:19:32 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 11:19:32 [DEBUG] TestInterceptor.preHandle{21} - /spring/update.me
+21-10-06 11:19:32 [ERROR] audit.exceptionOccured{120} - 2. PreparedStatement.execute() insert into member
+		values('jinjin', NULL, '예진상', 'oasis21213@naver.com', 'F',
+		'28', '01091318410', '13968      /      경기도 안양시 만안구 석천로 177-1      /      (석수동)', sysdate, sysdate, default)
+java.sql.SQLIntegrityConstraintViolationException: ORA-01400: cannot insert NULL into ("SPRING"."MEMBER"."USER_PWD")
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:447)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:951)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:513)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:227)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:531)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:208)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1046)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1336)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3613)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3714)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1378)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at net.sf.log4jdbc.PreparedStatementSpy.execute(PreparedStatementSpy.java:418)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy8.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278)
+	at com.kh.spring.member.model.dao.MemberDao.insertMember(MemberDao.java:16)
+	at com.kh.spring.member.model.service.MemberServiceImpl.updateMember(MemberServiceImpl.java:64)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:366)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:99)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy34.updateMember(Unknown Source)
+	at com.kh.spring.member.controller.MemberCountroller.updateMember(MemberCountroller.java:200)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:232)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:167)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:194)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:167)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:194)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:167)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:544)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:698)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:364)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:624)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:831)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1651)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+21-10-06 11:19:32 [ERROR] sqltiming.exceptionOccured{139} - 2. PreparedStatement.execute() FAILED! insert into member
+		values('jinjin', NULL, '예진상', 'oasis21213@naver.com', 'F',
+		'28', '01091318410', '13968      /      경기도 안양시 만안구 석천로 177-1      /      (석수동)', sysdate, sysdate, default) {FAILED after 10 msec}
+java.sql.SQLIntegrityConstraintViolationException: ORA-01400: cannot insert NULL into ("SPRING"."MEMBER"."USER_PWD")
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:447)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:951)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:513)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:227)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:531)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:208)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1046)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1336)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3613)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3714)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1378)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at net.sf.log4jdbc.PreparedStatementSpy.execute(PreparedStatementSpy.java:418)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy8.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278)
+	at com.kh.spring.member.model.dao.MemberDao.insertMember(MemberDao.java:16)
+	at com.kh.spring.member.model.service.MemberServiceImpl.updateMember(MemberServiceImpl.java:64)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:366)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:99)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy34.updateMember(Unknown Source)
+	at com.kh.spring.member.controller.MemberCountroller.updateMember(MemberCountroller.java:200)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:232)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:167)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:194)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:167)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:194)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:167)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:544)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:698)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:364)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:624)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:831)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1651)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+21-10-06 11:19:32 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
+21-10-06 11:19:34 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 11:19:34 [DEBUG] TestInterceptor.preHandle{21} - /spring/myPage.me
+21-10-06 11:19:34 [DEBUG] TestInterceptor.postHandle{30} - ========== postHandle ==========
+21-10-06 11:19:34 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
+21-10-06 11:19:38 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 11:19:38 [DEBUG] TestInterceptor.preHandle{21} - /spring/logout.me
+21-10-06 11:19:38 [DEBUG] TestInterceptor.postHandle{30} - ========== postHandle ==========
+21-10-06 11:19:38 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
+21-10-06 11:19:45 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 11:19:45 [DEBUG] TestInterceptor.preHandle{21} - /spring/login.me
+21-10-06 11:19:45 [INFO ] LoginInterceptor.postHandle{29} - jinjin 192.168.35.215
+21-10-06 11:19:45 [DEBUG] TestInterceptor.postHandle{30} - ========== postHandle ==========
+21-10-06 11:19:45 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
+21-10-06 11:19:47 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 11:19:47 [DEBUG] TestInterceptor.preHandle{21} - /spring/myPage.me
+21-10-06 11:19:47 [DEBUG] TestInterceptor.postHandle{30} - ========== postHandle ==========
+21-10-06 11:19:47 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
+21-10-06 11:20:59 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 11:20:59 [DEBUG] TestInterceptor.preHandle{21} - /spring/login.me
+21-10-06 11:21:01 [INFO ] LoginInterceptor.postHandle{29} - jinjin 192.168.35.215
+21-10-06 11:21:01 [DEBUG] TestInterceptor.postHandle{30} - ========== postHandle ==========
+21-10-06 11:21:01 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
+21-10-06 11:21:05 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 11:21:05 [DEBUG] TestInterceptor.preHandle{21} - /spring/myPage.me
+21-10-06 11:21:05 [DEBUG] TestInterceptor.postHandle{30} - ========== postHandle ==========
+21-10-06 11:21:05 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
+21-10-06 11:21:10 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 11:21:10 [DEBUG] TestInterceptor.preHandle{21} - /spring/update.me
+21-10-06 11:21:10 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
+21-10-06 11:21:13 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 11:21:13 [DEBUG] TestInterceptor.preHandle{21} - /spring/myPage.me
+21-10-06 11:21:13 [DEBUG] TestInterceptor.postHandle{30} - ========== postHandle ==========
+21-10-06 11:21:13 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
+21-10-06 11:27:02 [INFO ] ContextLoader.initWebApplicationContext{271} - Root WebApplicationContext: initialization started
+21-10-06 11:27:04 [INFO ] ContextLoader.initWebApplicationContext{307} - Root WebApplicationContext initialized in 2503 ms
+21-10-06 11:27:04 [INFO ] DispatcherServlet.initServletBean{525} - Initializing Servlet 'appServlet'
+21-10-06 11:27:07 [INFO ] DispatcherServlet.initServletBean{547} - Completed initialization in 2243 ms
+21-10-06 11:27:13 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 11:27:13 [DEBUG] TestInterceptor.preHandle{21} - /spring/login.me
+21-10-06 11:27:15 [INFO ] LoginInterceptor.postHandle{29} - jinjin 192.168.35.215
+21-10-06 11:27:15 [DEBUG] TestInterceptor.postHandle{30} - ========== postHandle ==========
+21-10-06 11:27:15 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
+21-10-06 11:27:17 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 11:27:17 [DEBUG] TestInterceptor.preHandle{21} - /spring/myPage.me
+21-10-06 11:27:17 [DEBUG] TestInterceptor.postHandle{30} - ========== postHandle ==========
+21-10-06 11:27:17 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
+21-10-06 11:27:23 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 11:27:23 [DEBUG] TestInterceptor.preHandle{21} - /spring/update.me
+21-10-06 11:27:23 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
+21-10-06 11:27:26 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 11:27:26 [DEBUG] TestInterceptor.preHandle{21} - /spring/myPage.me
+21-10-06 11:27:26 [DEBUG] TestInterceptor.postHandle{30} - ========== postHandle ==========
+21-10-06 11:27:26 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
+21-10-06 11:32:58 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 11:32:58 [DEBUG] TestInterceptor.preHandle{21} - /spring/login.me
+21-10-06 11:33:00 [INFO ] LoginInterceptor.postHandle{29} - jinjin 192.168.35.215
+21-10-06 11:33:00 [DEBUG] TestInterceptor.postHandle{30} - ========== postHandle ==========
+21-10-06 11:33:00 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
+21-10-06 11:33:03 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 11:33:03 [DEBUG] TestInterceptor.preHandle{21} - /spring/myPage.me
+21-10-06 11:33:03 [DEBUG] TestInterceptor.postHandle{30} - ========== postHandle ==========
+21-10-06 11:33:03 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
+21-10-06 11:33:07 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 11:33:07 [DEBUG] TestInterceptor.preHandle{21} - /spring/update.me
+21-10-06 11:33:07 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
+21-10-06 11:33:10 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 11:33:10 [DEBUG] TestInterceptor.preHandle{21} - /spring/myPage.me
+21-10-06 11:33:10 [DEBUG] TestInterceptor.postHandle{30} - ========== postHandle ==========
+21-10-06 11:33:10 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
+21-10-06 11:33:15 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 11:33:15 [DEBUG] TestInterceptor.preHandle{21} - /spring/logout.me
+21-10-06 11:33:15 [DEBUG] TestInterceptor.postHandle{30} - ========== postHandle ==========
+21-10-06 11:33:15 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
+21-10-06 11:33:20 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 11:33:20 [DEBUG] TestInterceptor.preHandle{21} - /spring/login.me
+21-10-06 11:33:20 [INFO ] LoginInterceptor.postHandle{29} - jinjin 192.168.35.215
+21-10-06 11:33:20 [DEBUG] TestInterceptor.postHandle{30} - ========== postHandle ==========
+21-10-06 11:33:20 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
+21-10-06 11:33:23 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 11:33:23 [DEBUG] TestInterceptor.preHandle{21} - /spring/myPage.me
+21-10-06 11:33:23 [DEBUG] TestInterceptor.postHandle{30} - ========== postHandle ==========
+21-10-06 11:33:23 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
+21-10-06 12:09:14 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 12:09:14 [DEBUG] TestInterceptor.preHandle{21} - /spring/login.me
+21-10-06 12:09:16 [INFO ] LoginInterceptor.postHandle{29} - jinjin 192.168.35.215
+21-10-06 12:09:16 [DEBUG] TestInterceptor.postHandle{30} - ========== postHandle ==========
+21-10-06 12:09:16 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
+21-10-06 12:09:19 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 12:09:19 [DEBUG] TestInterceptor.preHandle{21} - /spring/myPage.me
+21-10-06 12:09:19 [DEBUG] TestInterceptor.postHandle{30} - ========== postHandle ==========
+21-10-06 12:09:19 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
+21-10-06 12:09:23 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 12:09:23 [DEBUG] TestInterceptor.preHandle{21} - /spring/update.me
+21-10-06 12:09:23 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
+21-10-06 12:09:27 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 12:09:27 [DEBUG] TestInterceptor.preHandle{21} - /spring/logout.me
+21-10-06 12:09:27 [DEBUG] TestInterceptor.postHandle{30} - ========== postHandle ==========
+21-10-06 12:09:27 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
+21-10-06 12:09:33 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 12:09:33 [DEBUG] TestInterceptor.preHandle{21} - /spring/login.me
+21-10-06 12:09:33 [INFO ] LoginInterceptor.postHandle{29} - jinjin 192.168.35.215
+21-10-06 12:09:33 [DEBUG] TestInterceptor.postHandle{30} - ========== postHandle ==========
+21-10-06 12:09:33 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
+21-10-06 12:09:35 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 12:09:35 [DEBUG] TestInterceptor.preHandle{21} - /spring/myPage.me
+21-10-06 12:09:35 [DEBUG] TestInterceptor.postHandle{30} - ========== postHandle ==========
+21-10-06 12:09:35 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
+21-10-06 12:30:11 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 12:30:11 [DEBUG] TestInterceptor.preHandle{21} - /spring/login.me
+21-10-06 12:30:12 [INFO ] LoginInterceptor.postHandle{29} - jinjin 192.168.35.215
+21-10-06 12:30:12 [DEBUG] TestInterceptor.postHandle{30} - ========== postHandle ==========
+21-10-06 12:30:12 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
+21-10-06 12:30:14 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 12:30:14 [DEBUG] TestInterceptor.preHandle{21} - /spring/myPage.me
+21-10-06 12:30:14 [DEBUG] TestInterceptor.postHandle{30} - ========== postHandle ==========
+21-10-06 12:30:14 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
+21-10-06 12:30:20 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 12:30:20 [DEBUG] TestInterceptor.preHandle{21} - /spring/update.me
+21-10-06 12:30:20 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
+21-10-06 12:30:25 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 12:30:25 [DEBUG] TestInterceptor.preHandle{21} - /spring/myPage.me
+21-10-06 12:30:25 [DEBUG] TestInterceptor.postHandle{30} - ========== postHandle ==========
+21-10-06 12:30:25 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
+21-10-06 12:30:28 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 12:30:28 [DEBUG] TestInterceptor.preHandle{21} - /spring/logout.me
+21-10-06 12:30:28 [DEBUG] TestInterceptor.postHandle{30} - ========== postHandle ==========
+21-10-06 12:30:28 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
+21-10-06 12:30:33 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 12:30:33 [DEBUG] TestInterceptor.preHandle{21} - /spring/login.me
+21-10-06 12:30:33 [INFO ] LoginInterceptor.postHandle{29} - jinjin 192.168.35.215
+21-10-06 12:30:33 [DEBUG] TestInterceptor.postHandle{30} - ========== postHandle ==========
+21-10-06 12:30:33 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
+21-10-06 12:30:35 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 12:30:35 [DEBUG] TestInterceptor.preHandle{21} - /spring/myPage.me
+21-10-06 12:30:35 [DEBUG] TestInterceptor.postHandle{30} - ========== postHandle ==========
+21-10-06 12:30:36 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
+21-10-06 12:35:01 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 12:35:01 [DEBUG] TestInterceptor.preHandle{21} - /spring/login.me
+21-10-06 12:35:03 [INFO ] LoginInterceptor.postHandle{29} - jinjin 192.168.35.215
+21-10-06 12:35:03 [DEBUG] TestInterceptor.postHandle{30} - ========== postHandle ==========
+21-10-06 12:35:03 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
+21-10-06 12:35:05 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 12:35:05 [DEBUG] TestInterceptor.preHandle{21} - /spring/myPage.me
+21-10-06 12:35:05 [DEBUG] TestInterceptor.postHandle{30} - ========== postHandle ==========
+21-10-06 12:35:05 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
+21-10-06 12:35:11 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 12:35:11 [DEBUG] TestInterceptor.preHandle{21} - /spring/update.me
+21-10-06 12:35:11 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
+21-10-06 12:35:14 [DEBUG] TestInterceptor.preHandle{20} - ========== preHandle ==========
+21-10-06 12:35:14 [DEBUG] TestInterceptor.preHandle{21} - /spring/myPage.me
+21-10-06 12:35:14 [DEBUG] TestInterceptor.postHandle{30} - ========== postHandle ==========
+21-10-06 12:35:14 [DEBUG] TestInterceptor.afterCompletion{39} - ========== afterCompletion ==========
